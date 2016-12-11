@@ -1,0 +1,35 @@
+# change the settings for your preferences and setup
+settings :
+    web_ip : '127.0.0.1'
+    web_port : 5000
+    rpc_ip : '127.0.0.1'
+    rpc_port : 8090
+    cli_port : 8091
+    rpc_user : 'RPCUSER'
+    rpc_password : 'RPCPASS'
+    password : 'YOURWALLETPASSWORD'
+
+mailgun:
+    url : 'MAILGUN_URL'
+    api : 'MAILGUN_API_KEY'
+    email: 'YOUREMAIL'
+
+steem:
+    witness : 'YOURWITNESS'
+    # number of blocks allow to be missed per node before switching taking place
+    allow_missed : 2
+    # The rate in seconds on checking witness status
+    check_rate : 60
+    # Properties to set on the witness update
+    steem_account_creation_fee : '50.000 STEEM'
+    steem_maximum_block_size : 65536
+    steem_sbd_interest_rate : 0060
+    witness_url : 'WITNESS_URL'
+
+# List of signing keys to switch to in case of failure
+signing_keys:
+    main_signing_key : 'key1'
+    backup_signing_key : 'key2'
+    backup_signing_key2 : 'key3'
+    private_signing_key : 'key4'
+
